@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Main_Page">
+
+
+  <ImageView
+      android:id="@+id/LogoApp"
+      android:layout_width="385dp"
+      android:layout_height="79dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/logo"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/showMatch"
+      android:layout_width="287dp"
+      android:layout_height="62dp"
+      android:layout_marginTop="50dp"
+      android:backgroundTint="@color/darkYellow"
+      android:drawableLeft="@drawable/stadium"
+      android:fontFamily="@font/abel"
+      android:onClick="goToCountryPage"
+      android:text="@string/show_match"
+      android:textColor="@color/blue"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/LogoApp"
+      app:rippleColor="@color/yellow" />
+
+  <ImageView
+      android:id="@+id/profile"
+      android:layout_width="82dp"
+      android:layout_height="69dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginEnd="15dp"
+      android:contentDescription="@string/profile"
+      android:onClick="goToProfilePage"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/account" />
+
+  <ImageView
+      android:id="@+id/group"
+      android:layout_width="82dp"
+      android:layout_height="69dp"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="15dp"
+      android:contentDescription="@string/group"
+      android:onClick="goToCreateJoinGroupPage"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/group" />
+
+  <Button
+      android:id="@+id/favorites"
+      android:layout_width="287dp"
+      android:layout_height="62dp"
+      android:backgroundTint="@color/darkYellow"
+      android:drawableLeft="@drawable/favorite"
+      android:drawablePadding="1dp"
+      android:fontFamily="@font/abel"
+      android:onClick="goToFavoritesPage"
+      android:text="@string/fav"
+      android:textColor="@color/blue"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/showMatch"
+      app:rippleColor="@color/yellow" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

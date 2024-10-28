@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">KickOff</string>
+    <string name="key_football_api">575d5903fad782984efe5802d82bbf69065fdefa26312bf4566d7cd675ff54f7</string>
+    <string name="key_maps_api">AIzaSyB1kHsHujdwKvUAfaSAs0a6KUf1oZQI2Gs</string>
+    <string name="link_db">https://kickoff-6dc8b-default-rtdb.europe-west1.firebasedatabase.app/</string>
+
+
+    <string name="titleApp">KICKOFF</string>
+
+    <string name="login">LOGIN</string>
+    <string name="bt_register">REGISTER</string>
+    <string name="bt_create">CREATE</string>
+    <string name="bt_join">JOIN</string>
+    <string name="bt_more_infos">MORE INFORMATION ON THE MATCH</string>
+    <string name="bt_team">+1</string>
+    <string name="bt_home">BACK TO HOME</string>
+    <string name="bt_ranking">LEAGUE RANKING</string>
+    <string name="logout">LOGOUT</string>
+    <string name="welcome">WELCOME</string>
+    <string name="match">MATCH</string>
+    <string name="fav">FAVORITES</string>
+    <string name="profile">PROFILE</string>
+    <string name="group">GROUP</string>
+
+
+    <string name="register">CREATE AN ACCOUNT</string>
+    <string name="ligues">LEAGUES AVAILABLE:</string>
+    <string name="show_match">FIND A MATCH</string>
+    <string name="text_date_selected">NO DATES SELECTED</string>
+    <string name="create_group">CREATE A GROUP</string>
+    <string name="join_group">JOIN A GROUP</string>
+    <string name="leave_group">LEAVE THE GROUP</string>
+    <string name="leaderboard">LEADERBOARD</string>
+    <string name="match_of_the_day">MATCH OF THE DAY</string>
+    <string name="select_group">SELECT A GROUP IN THE LIST</string>
+    <string name="list_user">GROUP USERS :</string>
+    <string name="list_fav">FAVORITES :</string>
+    <string name="title_match_of_the_day">MATCH OF THE DAY :</string>
+    <string name="vote_for_a_team">VOTE FOR A TEAM</string>
+    <string name="title_leaderboard">LEADERBOARD</string>
+    <string name="title_ranking">LEAGUE RANKING :</string>
+
+
+
+
+
+    <string name="hint_pseudo">ENTER YOUR PSEUDO</string>
+    <string name="hint_email">ENTER YOUR E-MAIL</string>
+    <string name="hint_password">ENTER YOUR PASSWORD</string>
+    <string name="hint_confirmation_password">ENTER YOUR PASSWORD AGAIN</string>
+    <string name="hint_searchbarCountry">SEARCH YOUR COUNTRY</string>
+    <string name="hint_searchbarLeague">COUNTRY</string>
+    <string name="hint_searchbarMatch">LEAGUE</string>
+    <string name="hint_groupName">ENTER A GROUP NAME</string>
+
+
+</resources>

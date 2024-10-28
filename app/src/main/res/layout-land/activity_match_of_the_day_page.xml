@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MatchOfTheDay_Page">
+
+
+    <TextView
+        android:id="@+id/title_matchOfTheDay"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_match_of_the_day"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homeTeam"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:text="TEAM"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_matchOfTheDay" />
+
+    <TextView
+        android:id="@+id/awayTeam"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="5dp"
+        android:text="TEAM"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_matchOfTheDay" />
+
+    <TextView
+        android:id="@+id/score_team_a"
+        android:layout_width="87dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTeam" />
+
+    <TextView
+        android:id="@+id/score_team_b"
+        android:layout_width="87dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/awayTeam" />
+
+    <Button
+        android:id="@+id/bt_team_a"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:onClick="voteEquipeA"
+        android:text="@string/bt_team"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_team_a"
+        app:rippleColor="@color/darkYellow" />
+
+    <Button
+        android:id="@+id/bt_team_b"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/yellow"
+        android:onClick="voteEquipeB"
+        android:text="@string/bt_team"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_team_b"
+        app:rippleColor="@color/darkYellow" />
+
+
+    <Button
+        android:id="@+id/bt_more_infos"
+        android:layout_width="304dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/darkYellow"
+        android:onClick="goToDetailMatch"
+        android:text="@string/bt_more_infos"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_matchOfTheDay" />
+
+    <TextView
+        android:id="@+id/my_vote"
+        android:layout_width="321dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/vote_for_a_team"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_more_infos" />
+
+    <TextView
+        android:id="@+id/no_vote"
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_vote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

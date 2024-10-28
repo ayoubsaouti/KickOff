@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Match_Page">
+
+    <TextView
+        android:id="@+id/dateSelected"
+        android:layout_width="163dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/text_date_selected"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_ranking"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toEndOf="@+id/dateSelector"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_ranking"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/darkYellow"
+        android:drawableLeft="@drawable/ranking"
+        android:onClick="goToRanking"
+
+        android:text="@string/bt_ranking"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/sw_leagueSelected"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/yellow" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dateSelector"
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="SELECT A DATE"
+        android:textColor="@color/blue"
+        app:backgroundTint="@color/darkYellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/yellow" />
+
+    <SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:queryHint="@string/hint_searchbarCountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSelector" />
+
+    <ListView
+        android:id="@+id/myMatchList_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="128dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar">
+
+    </ListView>
+
+    <Switch
+        android:id="@+id/sw_leagueSelected"
+        android:layout_width="214dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:checked="false"
+        android:onClick="setSwitch"
+        android:text="leagueSelected"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:thumbTint="@color/darkYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:checked="false"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

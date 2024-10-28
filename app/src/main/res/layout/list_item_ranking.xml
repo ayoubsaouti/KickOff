@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/rankingPosition_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/clubLogo_id"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/rankingPosition_id"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_team"/>
+
+        <TextView
+            android:id="@+id/clubName_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/clubLogo_id"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/allMatch_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matches Played: 0"
+            android:textSize="14sp"
+            android:layout_below="@+id/clubName_id"
+            android:layout_toEndOf="@+id/clubLogo_id"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/matchWon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matches Won: 0"
+            android:textSize="14sp"
+            android:layout_below="@+id/allMatch_id"
+            android:layout_toEndOf="@+id/clubLogo_id"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/matchesDraws_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matches Draws: 0"
+            android:textSize="14sp"
+            android:layout_below="@+id/matchWon_id"
+            android:layout_toEndOf="@+id/clubLogo_id"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/matchesLost_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matches Lost: 0"
+            android:textSize="14sp"
+            android:layout_below="@+id/matchesDraws_id"
+            android:layout_toEndOf="@+id/clubLogo_id"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/points_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points: 0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

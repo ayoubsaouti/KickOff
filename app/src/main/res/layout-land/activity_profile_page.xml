@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Profile_Page">
+
+    <TextView
+        android:id="@+id/users_details"
+        android:layout_width="332dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="10dp"
+        android:shadowColor="@color/yellow"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="287dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/darkYellow"
+        android:drawableLeft="@drawable/exit"
+        android:padding="10dp"
+        android:text="@string/logout"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/users_details"
+        app:rippleColor="@color/yellow" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Groupe_Page">
+
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="332dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        android:shadowColor="@color/yellow"
+        android:text="NAME"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listOfUsers"
+        android:layout_width="340dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_grp" />
+
+
+    <TextView
+        android:id="@+id/title_grp"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/list_user"
+        android:textColor="@color/yellow"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupName" />
+
+    <Button
+        android:id="@+id/leave"
+        android:layout_width="287dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/darkYellow"
+        android:drawableLeft="@drawable/exit"
+        android:onClick="leaveGroup"
+        android:padding="10dp"
+        android:text="@string/leave_group"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaderboard"
+        app:rippleColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/vote"
+        android:layout_width="287dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/darkYellow"
+        android:drawableLeft="@drawable/day_calendar"
+        android:onClick="goToMatchdayPage"
+        android:padding="10dp"
+        android:text="@string/match_of_the_day"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listOfUsers"
+        app:rippleColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/leaderboard"
+        android:layout_width="287dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/darkYellow"
+        android:drawableLeft="@drawable/leaderboard"
+        android:onClick="goToLeaderboardPage"
+        android:padding="10dp"
+        android:text="@string/leaderboard"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vote"
+        app:rippleColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Point :"
+        android:textColor="@color/yellow"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

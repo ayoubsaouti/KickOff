@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".DetailMatch_Page">
+
+    <Button
+        android:id="@+id/bt_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/darkYellow"
+        android:drawableLeft="@drawable/home"
+        android:onClick="goToHome"
+        android:text="@string/bt_home"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stadium"
+        app:rippleColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/dateTimeMatch"
+        android:layout_width="249dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statut" />
+
+    <ImageView
+        android:id="@+id/homeTeamLogo"
+        android:layout_width="124dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/finalResult"
+        android:layout_width="187dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/awayTeam"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/homeTeam"
+        app:layout_constraintTop_toBottomOf="@+id/dateTimeMatch" />
+
+    <ImageView
+        android:id="@+id/awayTeamLogo"
+        android:layout_width="124dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homeTeam"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTeamLogo" />
+
+    <TextView
+        android:id="@+id/awayTeam"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/awayTeamLogo" />
+
+    <TextView
+        android:id="@+id/stadium"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="5dp"
+        android:text="stadium"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalResult" />
+
+    <TextView
+        android:id="@+id/statut"
+        android:layout_width="133dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/darkYellow"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="343dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stadium" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

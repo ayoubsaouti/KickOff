@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1006278520829",
+    "project_id": "kickoff-6dc8b",
+    "storage_bucket": "kickoff-6dc8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006278520829:android:e1979bb78016806674f394",
+        "android_client_info": {
+          "package_name": "com.example.kickoff"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1Prm8sjvhGejarETkd1TGI40-v9CeW6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
